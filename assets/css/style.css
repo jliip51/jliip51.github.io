@@ -129,8 +129,8 @@ div.image-set2 {
 
 div.image-set3 {
 	margin: 58px 0px 42px 32px;
-/*	display: flex;
-	justify-content: left;*/
+	display: flex;
+	justify-content: left;
 }
 
 div.image {
@@ -151,6 +151,11 @@ div.caption {
 	bottom: 10px;
 	color: #ffffff;
 	background: #4aaaa5;
+}
+
+img.pic {
+	width: 100%;
+	height: 100%;
 }
 
 /*Styling for Contact content section*/
