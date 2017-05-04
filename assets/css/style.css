@@ -1,0 +1,233 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	background-image: url("../images/old_moon.png");
+	flex-direction: column;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3 {
+	font-family: Arial, 'Helvetica Nueue', Helvetica, sans-serif;
+}
+
+header {
+	height: 88px;
+	border-bottom: solid #cccccc;
+	background: #ffffff;
+}
+
+/*styling for header content*/
+div#top {
+	width: 960px;
+	height: 88px;
+	margin: auto;
+	position: relative;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Georgia;
+	color: #ffffff;
+	width: 18%;
+	text-align: center;
+	padding: 32px;
+	background: #4aaaa5;
+}
+
+/*styling for nav bar*/
+nav {
+	width: 50%;
+	text-align: right;
+	position: absolute;
+	top: 32px;
+	right: 0;
+}
+
+a.linka {
+	font-size: 16px;
+	font-family: Helvetica;
+	color: #777777;
+	padding-left: 20px;
+	text-decoration: none;
+	padding-right: 20px;
+	border-right: 1px solid #cccccc;
+}
+
+a.linkb {
+	font-size: 16px;
+	font-family: Helvetica;
+	color: #777777;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #4aaaa5;
+}
+
+/*wrapper to define content area*/
+#wrapper {
+	width: 960px;
+	margin: 35px auto;
+	flex: 1;
+	position: relative;
+}
+
+/*h2 styling for About, Portfolio & Contact sections*/
+h2 {
+	font-size: 24px;  
+	font-family: Georgia;
+	font-weight: bold;
+	color: #4aaaa5;
+	margin: 42px 32px 30px 32px;
+	padding-bottom: 35px;
+	border-bottom: solid 3px #dddddd;
+}
+
+section#content {
+	width: 650px;
+	border: solid 2px #dddddd;
+	background: #ffffff;
+}
+/*styling for About content section*/
+#content p {
+	font-size: 16px;
+	font-family: Helvetica;
+	line-height: 36px;
+	color: #777777;
+ 	margin: -10px 32px 42px 32px;
+}
+
+#photo {
+	width: 200px;
+	height: auto;
+	float: left;
+	margin: 0 26px 0px 32px;
+}
+
+/*Styling for Portfolio content section*/
+div.image-set1 {
+	margin: 0 0 0 32px;
+	display: flex;
+	justify-content: center;
+}
+
+div.image-set2 {
+	margin: 58px 0 0 32px;
+	display: flex;
+	justify-content: center;
+}
+
+div.image-set3 {
+	margin: 58px 0px 42px 32px;
+/*	display: flex;
+	justify-content: left;*/
+}
+
+div.image {
+	width: 276px;
+	height: 204px;
+	border: solid 1px #dddddd;
+	margin-right: 32px;
+	position: relative;
+}
+
+div.caption {
+	font-size: 20px;
+	font-family: serif;
+	text-align: center;
+	width: 100%;
+	padding: 26px 0 26px 0;
+	position: absolute;
+	bottom: 10px;
+	color: #ffffff;
+	background: #4aaaa5;
+}
+
+/*Styling for Contact content section*/
+label {
+	font-size: 18px;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: #777777;
+}
+
+input {
+	font-family: Helvetica;
+	color: #cccccc;
+	width: 100%;
+	display: block;
+	border: solid 1.5px #dddddd;
+}
+
+textarea {
+	font-family: Helvetica;
+	color: #cccccc;
+	width: 100%;
+	display: block;
+	border: solid 1.5px #dddddd;
+}
+
+input#submit {
+	font-size: 18px;
+	font-family: Helvetica;
+	color: #ffffff;
+	text-align: center;
+	width: 116px;
+	padding: 17px;
+	
+	background: #4aaaa5;
+}
+
+/*Styling for Connect with Me section*/
+section#connect {
+	width: 270px;
+	border: solid 2px #dddddd;
+	background: #ffffff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#connect h3 {
+	font-size: 24px;  
+	font-family: Georgia;
+	font-weight: bold;
+	color: #4aaaa5;
+	text-align: center;
+	margin: 32px 31px 0px 31px;
+	padding-bottom: 26px;
+	border-bottom: solid 1px #dddddd;
+}
+
+div#logo {
+	margin: 25px 27px 42px 31px;
+}
+
+.icon {
+	width: 62px;
+	height: 62px;
+	padding-right: 6px;
+
+}
+/*Styling for footer*/
+footer {
+	font-size: 14px;
+	font-family: sans-serif;
+	color: #dddddd;
+	text-align: center;
+	padding: 32px;
+	border-top: solid 9px #4aaaa5;
+	background: #666666;
+	clear: both;
+	
+}
