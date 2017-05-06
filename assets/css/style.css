@@ -18,14 +18,13 @@ header {
 	height: 88px;
 	border-bottom: solid #cccccc;
 	background: #ffffff;
+
 }
 
 /*styling for header content*/
 div#top {
-	width: 960px;
-	height: 88px;
+	width: 62%;
 	margin: auto;
-	position: relative;
 }
 
 h1 {
@@ -33,19 +32,20 @@ h1 {
 	font-weight: bold;
 	font-family: Georgia;
 	color: #ffffff;
-	width: 18%;
 	text-align: center;
+	width: 25%;
 	padding: 32px;
+	float: left;
 	background: #4aaaa5;
 }
 
 /*styling for nav bar*/
 nav {
-	width: 50%;
 	text-align: right;
-	position: absolute;
-	top: 32px;
-	right: 0;
+	background: #ffffff;
+	float: right;
+	margin: 35px 0 0 0;
+
 }
 
 a.linka {
@@ -54,7 +54,7 @@ a.linka {
 	color: #777777;
 	padding-left: 20px;
 	text-decoration: none;
-	padding-right: 20px;
+	padding-right: 24px;
 	border-right: 1px solid #cccccc;
 }
 
@@ -76,10 +76,8 @@ a:active {
 
 /*wrapper to define content area*/
 #wrapper {
-	width: 960px;
-	margin: 35px auto;
-	flex: 1;
-	position: relative;
+	width: 62%;
+	margin: 35px auto 35px auto;
 }
 
 /*h2 styling for About, Portfolio & Contact sections*/
@@ -94,10 +92,12 @@ h2 {
 }
 
 section#content {
-	width: 650px;
+	width: 68%;
 	border: solid 2px #dddddd;
 	background: #ffffff;
+	float: left;
 }
+
 /*styling for About content section*/
 #content p {
 	font-size: 16px;
@@ -112,6 +112,43 @@ section#content {
 	height: auto;
 	float: left;
 	margin: 0 26px 0px 32px;
+}
+
+/*Styling for Connect with Me section*/
+section#connect {
+	width: 28%;
+	border: solid 2px #dddddd;
+	background: #ffffff;
+	float: right;
+}
+
+#connect h3 {
+	font-size: 24px;  
+	font-family: Georgia;
+	font-weight: bold;
+	color: #4aaaa5;
+	text-align: center;
+	margin: 0 27px 0 27px;
+	padding: 32px 0 26px 0;
+	border-bottom: solid 1px #dddddd;
+}
+
+div#logo {
+	padding: 32px 0 32px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.icon {
+	width: 62px;
+	height: 62px;
+	padding: 0 2px 0 2px;
+
+}
+
+.icon:hover {
+	width: 70px;
+	height: auto;
 }
 
 /*Styling for Portfolio content section*/
@@ -139,6 +176,10 @@ div.image {
 	border: solid 1px #dddddd;
 	margin-right: 32px;
 	position: relative;
+}
+
+div.image:hover {
+	border: solid 3px #4aaaa5;
 }
 
 div.caption {
@@ -193,37 +234,6 @@ input#submit {
 	background: #4aaaa5;
 }
 
-/*Styling for Connect with Me section*/
-section#connect {
-	width: 270px;
-	border: solid 2px #dddddd;
-	background: #ffffff;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-#connect h3 {
-	font-size: 24px;  
-	font-family: Georgia;
-	font-weight: bold;
-	color: #4aaaa5;
-	text-align: center;
-	margin: 32px 31px 0px 31px;
-	padding-bottom: 26px;
-	border-bottom: solid 1px #dddddd;
-}
-
-div#logo {
-	margin: 25px 27px 42px 31px;
-}
-
-.icon {
-	width: 62px;
-	height: 62px;
-	padding-right: 6px;
-
-}
 /*Styling for footer*/
 footer {
 	font-size: 14px;
@@ -231,8 +241,144 @@ footer {
 	color: #dddddd;
 	text-align: center;
 	padding: 32px;
+	margin: 35px 0 0 0;
 	border-top: solid 9px #4aaaa5;
 	background: #666666;
+	flex: 1;
 	clear: both;
-	
+}
+
+/*For Desktops*/
+@media only screen and (max-width: 980px) {
+
+	div#top {
+		width: 75%;
+	}
+	 
+	h1 { 
+		width: 30%;
+	}
+
+	#wrapper {
+		width: 75%;
+	}
+
+	section#content {
+		width: 55%;
+	}
+
+	#content p {
+		line-height: 24px;
+	}
+
+	#photo {
+		width: 80%;
+		margin: 0 32px 10px 32px;
+	}
+
+	section#connect {
+		width: 40%;
+	}
+
+}
+
+/*For tablets*/
+@media only screen and (max-width: 768px) {
+	div#top {
+		width: 82%;
+	}
+	 
+	h1 { 
+		width: 30%;
+	}
+
+	#wrapper {
+		width: 82%;
+	}
+
+	section#content {
+		width: 100%;
+		float: none;
+
+	}
+
+	#content p {
+		line-height: 24px;
+	}
+
+	#photo {
+		width: 50%;
+		margin: 0 32px 10px 32px;
+	}
+
+	section#connect {
+		width: 100%;
+		float: none;
+	}
+
+	#connect h3 {
+		text-align: left;
+	}
+
+	div#logo {
+		margin: 0 0 0 27px;
+		justify-content: flex-start;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	div#top {
+		width: 100%;
+	}
+	 
+	h1 { 
+		width: 100%;
+	}
+
+	#wrapper {
+		width: 100%;
+		margin-top: 42px;
+	}
+
+	nav {
+		width:100%;
+		text-align: center;
+		float: none;
+		clear: both;
+		padding: 10px 0 10px 0;
+		border-bottom: solid #cccccc;
+		background: #ffffff;
+
+	}
+
+	section#content {
+		width: 100%;
+		float: none;
+
+	}
+
+	#content p {
+		line-height: 24px;
+	}
+
+	#photo {
+		width: 50%;
+		margin: 0 32px 10px 32px;
+	}
+
+	section#connect {
+		width: 100%;
+		float: none;
+	}
+
+	#connect h3 {
+		text-align: left;
+	}
+
+	div#logo {
+		margin: 0 0 0 27px;
+		justify-content: flex-start;
+	}
+
 }
