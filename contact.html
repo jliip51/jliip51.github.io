@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type=text/css href="assets/css/reset.css">
 		<link rel="stylesheet" type=text/css href="assets/css/style.css">
+		<link rel="stylesheet" type=text/css href="assets/css/mediaq.css">
 		<title>Jeff Liipfert Portfolio</title>
 	</head>
 
@@ -27,18 +28,18 @@
 
 				<h2>Contact</h2>
 
-				<form action="mailto:jliip51@gmail.com" method="post" enctype="text/plain">
+				<form name="contact_form" action="mailto: jliip51@gmail.com" method="post" enctype="text/plain">
 					<p>
 						<label>Name</label>
-						<input type="text" value="John Doe" onfocus="if(this.value='John Doe'){this.value='';}"/>
+						<input type="text" name="name" value="John Doe" onfocus="if(this.value='John Doe'){this.value='';}"/>
 					</p>
 					<p>
 						<label>Email</label>
-						<input type="Email" value="example@gmail.com" onfocus="if(this.value=='example@gmail.com'){this.value='';}"/>
+						<input type="Email" name="email" value="example@gmail.com" onfocus="if(this.value=='example@gmail.com'){this.value='';}"/>
 					</p>
 					<p>
 						<label>Message</label>
-						<textarea rows="6" cols="78"></textarea>
+						<textarea name="message" rows="6" cols="78"></textarea>
 					</p>
 					<p>
 						<input id="submit" type="submit" Value="Submit">
